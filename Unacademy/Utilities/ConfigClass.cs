@@ -9,7 +9,7 @@ namespace Unacademy
         public static IWebDriver driver;
         public static string ChromeDriverPath = @"C:\Users\abhis\source\repos\Unacademy\Unacademy\WebDrivers\";
         public static string GeckoDriverPath = @"C:\Users\abhis\source\repos\Unacademy\Unacademy\WebDrivers\";
-        public static string url = "https://unacademy.com";
+        
         public static string Url = "https://unacademy.com/goal/ca-foundation/BBKWG";
 
 

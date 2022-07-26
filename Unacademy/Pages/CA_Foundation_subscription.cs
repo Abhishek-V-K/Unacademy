@@ -50,6 +50,9 @@ namespace Unacademy
             Actions action = new Actions(driver);
             action.MoveToElement(secondElement).Perform();
             driver.FindElement(View_all_plans_button).Click();
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            IWebElement element = driver.FindElement(By.XPath("//*[@id='__next']/div[1]/div/div[3]/div[3]/div[7]/div"));
+            js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
         }
         public void Proceedtopaybutton()
         {

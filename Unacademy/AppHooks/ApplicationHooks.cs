@@ -21,7 +21,7 @@ namespace Unacademy
          
 
             GB = new Get_subscription(driver);
-            driver.Manage().Window.Maximize();
+            driver.Manage().Window.FullScreen();
 
             LP = new LoginPage(driver);
             driver.Manage().Window.FullScreen();
