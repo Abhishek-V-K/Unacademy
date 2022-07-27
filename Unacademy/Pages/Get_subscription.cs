@@ -1,7 +1,6 @@
-﻿
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using System.Collections;
-using System.Linq;
+
 
 namespace Unacademy
 {
@@ -35,13 +34,7 @@ namespace Unacademy
             driver.FindElement(Experience_our_2021_recap).Click();
 
             IList all_windows = driver.WindowHandles;
-
-
-
             int count = all_windows.Count;
-
-
-
             Console.WriteLine(count);
 
 

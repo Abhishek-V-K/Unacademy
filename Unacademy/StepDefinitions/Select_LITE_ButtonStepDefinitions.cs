@@ -1,4 +1,3 @@
-//using System;
 //using TechTalk.SpecFlow;
 
 //namespace Unacademy.StepDefinitions
@@ -31,7 +30,8 @@
 
 //        [Then(@"It shows price of LITE plans with duration in other page")]
 //        public void ThenItShowsPriceOfLITEPlansWithDurationInOtherPage()
-//        {  Console.WriteLine("LITE plans with duration page is displayed");CaptureScreenshot();
+//        {
+//            Console.WriteLine("LITE plans with duration page is displayed"); CaptureScreenshot();
 //        }
 //    }
 //}

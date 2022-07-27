@@ -1,5 +1,4 @@
 //using NUnit.Framework;
-//using System;
 //using TechTalk.SpecFlow;
 
 //namespace Unacademy
@@ -12,7 +11,7 @@
 //        {
 //            Console.WriteLine("Chrome Is Launched And Unacademy Application Is Launched");
 //            Thread.Sleep(2000);
-       
+
 //        }
 
 //        [When(@"User clicks on Get subscription button")]
@@ -33,7 +32,7 @@
 //            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
 //            Console.WriteLine(actualTitle);
 //            CaptureScreenshot();
-      
+
 //        }
 //    }
 //}

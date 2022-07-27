@@ -1,4 +1,3 @@
-//using System;
 //using TechTalk.SpecFlow;
 
 //namespace Unacademy
@@ -43,7 +42,7 @@
 //        public void WhenUserClicksOnPlanDurationRadioButton()
 //        {
 //            CA_Foundation.TwoMonthsRadioButton();
-            
+
 //        }
 
 //        [When(@"User clicks on Have a referral code Text Box and enters Valid referral code and click on apply")]

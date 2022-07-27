@@ -17,5 +17,5 @@
 #	And User enters Registered Phone Number 8088814758
 #    And It shows Choose a payment method page 
 #	Then User Choose Net banking payment method
-#	And Click on Select a bank dropdown 
-#	And Select Canara Bank Corporate
+#	Then Click on Select a bank dropdown 
+#	Then Select Canara Bank Corporate

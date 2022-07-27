@@ -18,7 +18,6 @@
 #	Then User Choose Net banking payment method
 #	Then Click on Select a bank dropdown 
 #	Then Select Canara Bank Corporate
-#	
 #	Then User Choose UPI payment method
 #	Then Click on Enter UPI ID text box and Enter 9448045452
 #    Then Click on Select a bank dropdown 

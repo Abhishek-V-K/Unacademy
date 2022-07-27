@@ -1,7 +1,6 @@
-﻿
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
+
 
 namespace Unacademy
 {
@@ -14,11 +13,10 @@ namespace Unacademy
         private By Valid_through_YY = By.XPath("//input[@placeholder='YY']");
         private By Name_on_card = By.XPath("//*[@id='name_on_card']");
         private By Net_banking_Option = By.XPath("//*[@id='__next']/div[1]/div/div[2]/div[2]/div/div/div[3]/p");
-        private By Select_a_bank_Drop_Down = By.XPath("//*[@id='payment_form_nb']/div/div[5]/div/div[1]/svg");
+        private By Select_a_bank_Drop_Down = By.XPath("//input[@placeholder='Select a bank']");
         private By Selecting_a_Bank_Name = By.XPath("//*[@id='payment_form_nb']/div/div[5]/div/div[2]/div[3]/div/p");
         private By UPI_option = By.XPath("//*[@id='__next']/div[1]/div/div[2]/div[2]/div/div/div[4]/p");
         private By Enter_UPI_ID_Text_Box = By.XPath("//*[@id='payment_form_upi']/div[1]/div/input");
-        private By Select_a_bank_UPI_DropDown = By.XPath("//*[@id='payment_form_upi']/div[1]/div/div/div/div[2]/div[1]/svg");
         private By Select_a_bank_name_UPI_DropDown = By.XPath("//*[@id='payment_form_upi']/div[1]/div/div/div/div[2]/div[2]/div[6]/div/p");
         public Choose_a_payment_method(IWebDriver driver)
         {
@@ -54,19 +52,19 @@ namespace Unacademy
         public void SelectingabankDropdown()
         {
 
-            IWebElement secondElement = driver.FindElement(By.XPath("//input[@placeholder='Select a bank']"));
+            IWebElement secondElement = driver.FindElement(Select_a_bank_Drop_Down);
             Actions action = new Actions(driver);
             action.MoveToElement(secondElement).Perform();
-            driver.FindElement(By.XPath("//input[@placeholder='Select a bank']")).Click();
+            driver.FindElement(Select_a_bank_Drop_Down).Click();
 
 
         }
         public void Selectingabankname()
         {
-            IWebElement ondElement = driver.FindElement(By.XPath("//*[@id='payment_form_nb']/div/div[5]/div/div[2]/div[3]/div/p"));
+            IWebElement ondElement = driver.FindElement(Selecting_a_Bank_Name);
             Actions act = new Actions(driver);
             act.MoveToElement(ondElement).Perform();
-            driver.FindElement(By.XPath("//*[@id='payment_form_nb']/div/div[5]/div/div[2]/div[3]/div/p")).Click();
+            driver.FindElement(Selecting_a_Bank_Name).Click();
         }
         public void UPIoption()
         {
@@ -89,7 +87,7 @@ namespace Unacademy
             IWebElement ondElement = driver.FindElement(By.XPath("//*[@id='payment_form_upi']/div[1]/div/div/div/div[2]/div[2]/div[6]/div/p"));
             Actions act = new Actions(driver);
             act.MoveToElement(ondElement).Perform();
-            driver.FindElement(By.XPath("//*[@id='payment_form_upi']/div[1]/div/div/div/div[2]/div[2]/div[6]/div/p")).Click();
+            driver.FindElement(Select_a_bank_name_UPI_DropDown).Click();
         }
 
 

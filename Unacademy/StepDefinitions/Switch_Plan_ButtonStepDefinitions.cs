@@ -1,10 +1,9 @@
-//using System;
 //using TechTalk.SpecFlow;
 
 //namespace Unacademy
 //{
 //    [Binding]
-//    public class Switch_ButtonStepDefinitions : ApplicationHooks
+//    public class Switch_Plan_ButtonStepDefinitions : ApplicationHooks
 //    {
 //        [Given(@"Chrome is launched and Unacademy application is launched")]
 //        public void GivenChromeIsLaunchedAndUnacademyApplicationIsLaunched()

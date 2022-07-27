@@ -1,4 +1,3 @@
-//using System;
 //using TechTalk.SpecFlow;
 
 //namespace Unacademy
@@ -100,7 +99,7 @@
 //            Thread.Sleep(20000);
 //            Payment_Method.Selectingabankname();
 //        }
-        
+
 //        [Then(@"User Choose UPI payment method")]
 //        public void ThenUserChooseUPIPaymentMethod()
 //        {
