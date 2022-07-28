@@ -3,20 +3,43 @@
 //namespace Unacademy
 //{
 //    [Binding]
-//    public class Proceed_To_Pay_ButtonStepDefinitions : ApplicationHooks
+//    public class Proceed_To_Pay_ButtonStepDefinitions : UtilityClass
 //    {
-//        [Given(@"Chrome is launched and Unacademy application is launched")]
-//        public void GivenChromeIsLaunchedAndUnacademyApplicationIsLaunched()
+//        public Get_subscription GB;
+//        public LoginPage LP;
+//        public Selecting_Subscription_Plans SSPL;
+//        public CA_Foundation_subscription CA_Foundation;
+//        public Choose_a_payment_method Payment_Method;
+//        [BeforeScenario]
+//        public void BeforeScenario()
 //        {
-//            Console.WriteLine("Chrome Is Launched And Unacademy Application Is Launched");
-//        }
+//            LaunchBrowser("CHROME");
+//            LaunchApp(Url);
 
-//        [When(@"User clicks on Get subscription button")]
-//        public void WhenUserClicksOnGetSubscriptionButton()
-//        {
-//            Thread.Sleep(2000);
-//            GB.ClickOnGetSubscriptionButton();
+
 //        }
+//        public void ObjectMethod()
+//        {
+//            GB = new Get_subscription(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            LP = new LoginPage(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            SSPL = new Selecting_Subscription_Plans(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            CA_Foundation = new CA_Foundation_subscription(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            Payment_Method = new Choose_a_payment_method(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            Thread.Sleep(5000);
+//        }
+        
+
+
 
 //        [When(@"User clicks on Select PLUS button")]
 //        public void WhenUserClicksOnSelectPLUSButton()
@@ -75,6 +98,12 @@
 //        public void ThenItShowsChooseAPaymentMethodPage()
 //        {
 //            Console.WriteLine("Showing Payment method page");
+//        }
+//        [AfterScenario]
+//        public void AfterScenario()
+//        {
+//            Thread.Sleep(5000);
+//            CloseBrowser();
 //        }
 //    }
 //}

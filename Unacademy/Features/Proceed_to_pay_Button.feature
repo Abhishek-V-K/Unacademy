@@ -4,8 +4,6 @@
 #
 #@tag1
 #Scenario: Verifying Have a Proceed to pay button functionality
-#	Given Chrome is launched and Unacademy application is launched
-#	When User clicks on Get subscription button 
 #	And User clicks on Select PLUS button
 #	And User clicks on View all plans
 #	And User clicks on Accept cookies 

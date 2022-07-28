@@ -3,57 +3,67 @@
 //namespace Unacademy
 //{
 //    [Binding]
-//    public class Net_Banking_OptionStepDefinitions : ApplicationHooks
+//    public class Net_Banking_OptionStepDefinitions : UtilityClass
 //    {
-//        [Given(@"Chrome is launched and Unacademy application is launched")]
-//        public void GivenChromeIsLaunchedAndUnacademyApplicationIsLaunched()
-//        {
-//            Console.WriteLine("Chrome Is Launched And Unacademy Application Is Launched");
-//        }
+//        public Get_subscription GB;
+//        public LoginPage LP;
+//        public Selecting_Subscription_Plans SSPL;
+//        public CA_Foundation_subscription CA_Foundation;
+//        public Choose_a_payment_method Payment_Method;
+//        [BeforeScenario]
+//        //public void BeforeScenario()
+//        //{
+//        //    LaunchBrowser("CHROME");
+//        //    LaunchApp(Url);
 
-//        [When(@"User clicks on Get subscription button")]
-//        public void WhenUserClicksOnGetSubscriptionButton()
-//        {
-//            Thread.Sleep(2000);
-//            GB.ClickOnGetSubscriptionButton();
-//        }
 
-//        [When(@"User clicks on Select PLUS button")]
-//        public void WhenUserClicksOnSelectPLUSButton()
+//        //}
+//        public void ObjectMethod()
 //        {
-//            Thread.Sleep(20000);
-//            SSPL.ClickOnSelectPLUSButton();
-//        }
+//            GB = new Get_subscription(driver);
+//            driver.Manage().Window.FullScreen();
 
-//        [When(@"User clicks on View all plans")]
-//        public void WhenUserClicksOnViewAllPlans()
-//        {
-//            CA_Foundation.Viewallplansbutton();
-//        }
+//            LP = new LoginPage(driver);
+//            driver.Manage().Window.FullScreen();
 
-//        [When(@"User clicks on Accept cookies")]
-//        public void WhenUserClicksOnAcceptCookies()
-//        {
-//            Thread.Sleep(2000);
-//            CA_Foundation.AcceptCookiesbutton();
+//            SSPL = new Selecting_Subscription_Plans(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            CA_Foundation = new CA_Foundation_subscription(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            Payment_Method = new Choose_a_payment_method(driver);
+//            driver.Manage().Window.FullScreen();
+
+//            Thread.Sleep(5000);
 //        }
 
 //        [When(@"User clicks on Plan Duration Radio button")]
 //        public void WhenUserClicksOnPlanDurationRadioButton()
 //        {
+//            ObjectMethod();
+//            Thread.Sleep(2000);
+//            GB.ClickOnGetSubscriptionButton();
+//            Thread.Sleep(20000);
+//            SSPL.ClickOnSelectPLUSButton();
+//            Thread.Sleep(2000);
+//            CA_Foundation.Viewallplansbutton();
+//            Thread.Sleep(2000);
 //            CA_Foundation.TwoMonthsRadioButton();
 //        }
 
-//        [When(@"User clicks on Have a referral code Text Box and enters Valid referral code and click on apply")]
-//        public void WhenUserClicksOnHaveAReferralCodeTextBoxAndEntersValidReferralCodeAndClickOnApply()
-//        {
-//            CA_Foundation.HaveArefferalcodeTextBox1();
-//            CA_Foundation.ApplyReferralCode();
-//        }
+//        //[When(@"User clicks on Have a referral code Text Box and enters Valid referral code and click on apply")]
+//        //public void WhenUserClicksOnHaveAReferralCodeTextBoxAndEntersValidReferralCodeAndClickOnApply()
+//        //{
+//        //    CA_Foundation.HaveArefferalcodeTextBox1();
+//        //    CA_Foundation.ApplyReferralCode();
+//        //}
 
 //        [When(@"User clicks on Proceed to pay button")]
 //        public void WhenUserClicksOnProceedToPayButton()
 //        {
+//            CA_Foundation.HaveArefferalcodeTextBox1();
+//            CA_Foundation.ApplyReferralCode();
 //            Thread.Sleep(12000);
 //            CA_Foundation.Proceedtopaybutton();
 //        }
@@ -62,7 +72,7 @@
 //        public void WhenUserEntersRegisteredPhoneNumber(string RegisteredPhoneNumber)
 //        {
 //            Thread.Sleep(1000);
-//            LP.MobileNumberTextBox(RegisteredPhoneNumber);
+//            LP.MobileNumberTextBox();
 //            CA_Foundation.Loginbutton();
 //            Thread.Sleep(55000);
 //            CA_Foundation.VerifyOTPButton();
@@ -95,6 +105,11 @@
 //            Thread.Sleep(20000);
 //            Payment_Method.Selectingabankname();
 //        }
-
+//        [AfterScenario]
+//        public void AfterScenario()
+//        {
+//            Thread.Sleep(5000);
+//            CloseBrowser();
+//        }
 //    }
 //}

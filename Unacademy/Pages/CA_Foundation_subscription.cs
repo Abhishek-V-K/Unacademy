@@ -10,7 +10,7 @@ namespace Unacademy
         private By Heading_Path = By.ClassName("e1121ic30");
         private By PLUS_Plan_Switch_button = By.XPath("/html/body/div[1]/div[1]/div/div[3]/div[2]/div[1]/h4");
         private By ICONIC_Plan_Switch_button = By.XPath("/html/body/div[1]/div[1]/div/div[3]/div[2]/div[2]/h4");
-        private By LITE_Plan_Switch_button = By.XPath("/html/body/div[1]/div[1]/div/div[3]/div[2]/div[2]/h4");
+        private By LITE_Plan_Switch_button = By.XPath("//*[@id='__next']/div[1]/div/div[3]/div[2]/div[3]/h4");
         private By View_all_plans_button = By.XPath("//button[text()='View all plans']");
         private By Have_a_refferal_code_Text_Box = By.XPath("//*[@id='__next']/div[1]/div/div[3]/div[4]/div/div[2]/div/input");
         private By Proceed_to_pay_button = By.XPath("//*[@id='__next']/div[1]/div/div[3]/div[4]/div/button");
