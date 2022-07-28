@@ -36,6 +36,7 @@ namespace Unacademy
         [When(@"User clicks on Ok got it Popup button")]
         public void WhenUserClicksOnOkGotItPopupButton()
         {
+            Thread.Sleep(5000);
             GB.OKGOTITpopup();
         }
 

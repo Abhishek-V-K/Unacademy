@@ -67,13 +67,13 @@ namespace Unacademy
         [Then(@"User switches to ICONIC plan")]
         public void ThenUserSwitchesToICONICPlan()
         {
-            Thread.Sleep(2000);
+            Thread.Sleep(5000);
             GB.ClickOnGetSubscriptionButton();
             Thread.Sleep(12000);
             SSPL.ScrollDown();
             Thread.Sleep(2000);
             SSPL.ClickOnSelectLITEButton();
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
             CA_Foundation.ICONICSwitchbutton();
         }
 

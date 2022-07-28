@@ -84,6 +84,7 @@ namespace Unacademy
         [When(@"User clicks on View all plans")]
         public void WhenUserClicksOnViewAllPlans()
         {
+            Thread.Sleep(5000);
             CA_Foundation.Viewallplansbutton();
         }
 
